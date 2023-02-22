@@ -14,3 +14,19 @@ To use this:
 3) run with `python led_matrix.py`.
 
 You can also import the `update_matrix` and `from_img` functions and use them in your own code.
+
+## snake.py
+
+- Implements a simple snake game to play on an LED matrix.
+
+To use this:
+
+1) Install the [`keyboard`](https://pypi.org/project/keyboard/) package with `pip install keyboard` (this is needed for user input),
+2) run with `python snake.py`,
+3) use arrow keys to steer the snake or `esc` to end the game.
+
+This might need admin rights (`sudo`) in order to read pressed keyboard keys.
+
+You can also display the game simultaneously on your screen and on the LED matrix.
+To do this, change the `MATRIX` and `SCREEN` switches (`True` or `False`) accordingly.
+If `SCREEN` is `True`, the [`pygame`](https://pypi.org/project/pygame/) package needs to be installed with `pip install pygame` for on-screen rendering.
